@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta
+      name="description"
+      content="GRD is a graphic design club for creative people who want to learn, share, and make together."
+    >
+    <title>GRD — Graphic Design Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=BBH+Bogle&family=Goblin+One&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&family=Intel+One+Mono&family=Jacquard+12&family=Jacquarda+Bastarda+9&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-frame">
+      <header class="site-header" id="home">
+        <a class="logo-small" href="#home" aria-label="GRD home">
+          <span class="logo-small__g">g</span>
+          <span class="logo-small__r">R</span>
+          <span class="logo-small__d">d</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About us</a>
+          <a href="#content">Content</a>
+          <a href="#events">Events</a>
+          <a href="#join">Get involved</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-art" aria-hidden="true">
+            <div class="hero-art__second-book">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-right-large.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__notebook">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-left-large.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__tablet">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-right-tablet.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__ruler">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-ruler-right.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__compass">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-ruler-center.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__palette">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-palette-left.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__mouse">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-mouse.png" alt="">
+              </div>
+            </div>
+            <div class="hero-art__swatches">
+              <div class="hero-art__frame">
+                <img src="assets/images/hero-color-swatches.png" alt="">
+              </div>
+            </div>
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-title__design">Design</span>
+            <span class="hero-title__script">is better with</span>
+            <span class="hero-title__friends">friends</span>
+          </h1>
+        </section>
+
+        <section class="about section-wrap" id="about" aria-labelledby="about-title">
+          <h2 class="section-title about__title" id="about-title">Who we are</h2>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <ul class="team-list" aria-label="Club team">
+            <li class="team-card">
+              <img src="assets/images/team-scarlet.png" alt="Scarlet Remy holding a sketchbook">
+              <h3>Scarlet Remy</h3>
+              <p>President</p>
+            </li>
+            <li class="team-card">
+              <img src="assets/images/team-john.png" alt="John Smith holding a sketchbook">
+              <h3>John Smith</h3>
+              <p>Vice president</p>
+            </li>
+            <li class="team-card">
+              <div class="team-card__image-wrap">
+                <img src="assets/images/team-susan.png" alt="Susan Moira working on a laptop">
+              </div>
+              <h3>Susan Moira</h3>
+              <p>Social media manager</p>
+            </li>
+          </ul>
+        </section>
+
+        <section
+          class="content-section section-wrap"
+          id="content"
+          aria-label="Graphic design content"
+          data-active-category="Tutorials"
+        >
+          <div class="content-shapes" aria-hidden="true">
+            <img class="content-shape content-shape--interviews" src="assets/images/content-interviews.svg" alt="">
+            <img class="content-shape content-shape--resources" src="assets/images/content-resources.svg" alt="">
+            <img class="content-shape content-shape--tutorials" src="assets/images/content-section-extra.svg" alt="">
+          </div>
+          <div class="content-tabs" role="group" aria-label="Choose a content category">
+            <button
+              class="content-tab content-tab--tutorials is-active"
+              type="button"
+              data-category="Tutorials"
+              aria-pressed="true"
+            >
+              Tutorials
+            </button>
+            <button
+              class="content-tab content-tab--resources"
+              type="button"
+              data-category="Resources"
+              aria-pressed="false"
+            >
+              Resources
+            </button>
+            <button
+              class="content-tab content-tab--interviews"
+              type="button"
+              data-category="Interviews"
+              aria-pressed="false"
+            >
+              Interviews
+            </button>
+          </div>
+          <p class="visually-hidden" id="content-category-status" aria-live="polite">
+            Tutorials selected
+          </p>
+
+          <div class="content-panel">
+            <ul class="content-grid" aria-label="Featured graphic design content">
+              <li class="content-card">
+                <img src="assets/images/content-zine.png" alt="An open zine design with blue and pink printed spreads">
+                <h3>How to make a zine</h3>
+                <p>By Lilly Carter</p>
+              </li>
+              <li class="content-card">
+                <img src="assets/images/content-halftone-base.png" alt="A colorful halftone insect illustration">
+                <h3>Halftone effect</h3>
+                <p>By Josh Smith</p>
+              </li>
+              <li class="content-card">
+                <img src="assets/images/content-collage.png" alt="A colorful collage and stop-motion storyboard">
+                <h3>Collage stop motion</h3>
+                <p>By Bailey Nantais</p>
+              </li>
+              <li class="content-card">
+                <img src="assets/images/content-camera.png" alt="A camera basics lesson showing photography examples">
+                <h3>Camera basics</h3>
+                <p>By Erica Hayes</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="events section-wrap" id="events" aria-labelledby="events-title">
+          <h2 class="section-title events__title" id="events-title">Upcoming<br>events</h2>
+          <div class="event-track" tabindex="0" aria-label="Upcoming events; scroll horizontally for more">
+            <article class="event-card event-card--green">
+              <img class="event-card__shape" src="assets/images/event-green.svg" alt="" aria-hidden="true">
+              <div class="event-card__copy">
+                <h3>Procreate basics</h3>
+                <p class="event-card__byline">By Nina Silva</p>
+                <p class="event-card__date">21 November, 2026</p>
+                <p class="event-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+                </p>
+                <button class="signup-button" type="button">Sign up</button>
+              </div>
+              <img
+                class="event-card__image"
+                src="assets/images/event-procreate.png"
+                alt="An artist drawing on a tablet with a stylus"
+              >
+            </article>
+
+            <article class="event-card event-card--yellow">
+              <img class="event-card__shape" src="assets/images/event-yellow.svg" alt="" aria-hidden="true">
+              <div class="event-card__copy">
+                <h3>Halloween poster</h3>
+                <p class="event-card__byline">Contest</p>
+                <p class="event-card__date">1–25 October, 2026</p>
+                <p class="event-card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+                </p>
+                <button class="signup-button" type="button">Sign up</button>
+              </div>
+              <img
+                class="event-card__image"
+                src="assets/images/event-halloween.png"
+                alt="A handmade Halloween poster with a pumpkin and ghost"
+              >
+            </article>
+          </div>
+        </section>
+
+        <section class="join-section" id="join" aria-labelledby="join-title">
+          <h2 id="join-title">Become part of<br>our community</h2>
+          <button class="join-button" type="button">Join now</button>
+          <p class="action-status" aria-live="polite"></p>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap">
+        <a class="logo-large" href="#home" aria-label="GRD — Graphic Design Club, back to top">
+          <span class="logo-large__graphic">g aphic</span>
+          <span class="logo-large__r">R</span>
+          <span class="logo-large__design">design</span>
+          <span class="logo-large__club">club</span>
+        </a>
+
+        <nav class="footer-column" aria-label="Footer home navigation">
+          <h2><a href="#home">Home</a></h2>
+        </nav>
+        <nav class="footer-column" aria-label="About links">
+          <h2><a href="#about">About us</a></h2>
+          <a href="#about">Who we are</a>
+          <a href="#about">The team</a>
+        </nav>
+        <nav class="footer-column" aria-label="Content links">
+          <h2><a href="#content">Content</a></h2>
+          <a href="#content">Tutorials</a>
+          <a href="#content">Resources</a>
+          <a href="#content">Interviews</a>
+        </nav>
+        <nav class="footer-column" aria-label="Event links">
+          <h2><a href="#events">Events</a></h2>
+          <a href="#events">Talks</a>
+          <a href="#events">Contests</a>
+          <a href="#events">Workshops</a>
+        </nav>
+        <div class="footer-column footer-column--involved">
+          <h2><a href="#join">Get involved</a></h2>
+          <a href="#join">Join the club</a>
+          <span>Follow us</span>
+          <ul class="social-links" aria-label="Social platforms">
+            <li><img src="assets/images/social-x.png" alt="X"></li>
+            <li><img src="assets/images/social-instagram.png" alt="Instagram"></li>
+            <li><img src="assets/images/social-facebook.png" alt="Facebook"></li>
+          </ul>
+        </div>
+      </footer>
+      <div class="action-status action-status--footer" aria-live="polite"></div>
+    </div>
+  </body>
+</html>
